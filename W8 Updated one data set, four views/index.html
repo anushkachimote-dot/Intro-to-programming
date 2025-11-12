@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Views - Framework Approach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body>
+    <div class="container">
+        <header>
+            <h1>Restaurant Inspections in PG County</h1>
+            
+        </header>
+
+        <nav class="view-selector">
+            <button class="view-button active" id="btn-cards" data-view="cards">Card View</button>
+            <button class="view-button" id="btn-table" data-view="table">Table View</button>
+            <button class="view-button" id="btn-categories" data-view="categories">Category View</button>
+            <button class="view-button" id="btn-stats" data-view="stats">Stats View</button>
+        </nav>
+
+        <main class="display-container">
+            <div id="data-display">
+                <div class="loading">Loading restaurant data...</div>
+                
+            </div>
+        </main>
+         <section class="asst-box">
+            <h3>Reflection</h3>
+            <ol>
+                <li>Which API you chose and why
+I chose the pg county data recommended in the assignment because it seemed easier for me to handle. 
+</li>
+                <li> How each view emphasizes different aspects of your data
+The card view shows the most recently inspected food places and their compliance status. The table view on the other hand just lists the details of all food places in college park. The category view allows you to see different types of food places (restaurants, fast food chains, grocery stores, etc) that have been found to be compliant in college park. The statistic just gives an overview of the inspection itself rather than focus on food places.
+</li>
+                <li>What insights each presentation reveals that others don't?
+The statistics view just gives information about the overall process and numbers but doesnt mention the results of the inspections like the card view does. And these don’t give information about college park food places like the table and category view do.  
+</li>
+                <li>Which view do you think is most useful for your specific dataset and why?
+I think the category view because it allows a person to know what are some safe food places to eat in a specific location and even goes into the type of place.
+
+</li>
+                <li>One challenge you encountered and how you solved it
+One of the many challenges was finding out what kind of categories are in the pg county API. It was different from the local json file and I had already made a table. To identify what problem was occurring, I was able to look at the console log and identify the issue. 
+
+</li>
+            </ol>
+            
+        </section>
+
+    </div>
+    <script type="module" src="./script.js" defer></script>
+</body>
+</html>
